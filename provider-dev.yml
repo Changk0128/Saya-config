@@ -8,6 +8,18 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.2.8:3306/2004a?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     type: com.alibaba.druid.pool.DruidDataSource 
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    sender:
+      type: rabbit
+  sleuth:
+    sampler:
+      probability: 1
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
