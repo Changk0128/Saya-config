@@ -58,3 +58,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
+
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: D:/tmp/log
